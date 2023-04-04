@@ -1,8 +1,10 @@
-*{
-    font-family: 'PT Sans', sans-serif;
-    margin: 0;
-}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
 
 
 /**************************************
@@ -70,15 +72,18 @@ header{
         position: fixed;
         top: 0;
         left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20%;
     }
 
     #nav-container-mobile-tablet{
         display: none;
+    }
+
+    #subcontainer{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #right-nav{
@@ -96,3 +101,53 @@ header{
         border-radius: 10px;
     }
 }
+
+
+
+
+
+
+
+
+/**************************************
+ MAIN 
+***************************************/
+
+.container-developer{
+    padding: calc(12vh + 30px) 20px 0;
+    display: block;
+
+}
+
+.developer{
+    background-color: rgba(181,221,255,255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 60px 40px 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#demo{
+    justify-content: left;
+}
+
+.container-developer h2{
+    color: rgba(0,132,253,255);
+}
+
+.blue-button{
+    background-color: rgba(0,132,253,255);
+    color: white;
+    padding: 10px 60px;
+    border-radius: 20px;
+}    
+
+#phone{
+    width: 90%;
+}
+
+
