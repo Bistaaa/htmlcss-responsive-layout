@@ -16,7 +16,7 @@ header{
 
 /* nav mobile version */
 
-#nav-container-mobile{
+#nav-container-mobile-tablet{
     background-color: rgba(0,132,253,255);
     width: 100%;
     height: 12vh;
@@ -25,10 +25,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-#nav-container-tablet{
-    display: none;
 }
 
 #nav-container-desktop{
@@ -52,19 +48,8 @@ header{
 
 @media screen and (min-width:481px){
     
-    #nav-container-tablet{
-        background-color: rgba(0,132,253,255);
-        width: 100%;
+    #nav-container-mobile-tablet{
         height: 9vh;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #nav-container-mobile{
-        display: none;
     }
 
     #nav-container-desktop{
@@ -81,19 +66,33 @@ header{
     #nav-container-desktop{
         background-color: rgba(0,132,253,255);
         width: 100%;
-        height: 9vh;
+        height: 8vh;
         position: fixed;
+        top: 0;
+        left: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 0 20%;
     }
 
-    #nav-container-mobile{
+    #nav-container-mobile-tablet{
         display: none;
     }
 
-    #nav-container-tablet{
-        display: none;
+    #right-nav{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .white-button{
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 10px;
     }
 }
