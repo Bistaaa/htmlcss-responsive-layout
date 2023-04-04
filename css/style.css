@@ -163,3 +163,27 @@ header{
     color: rgba(0,132,253,255);
     font-size: 70px;
 }
+
+
+
+/* nav tablet version */
+
+@media screen and (min-width:481px){
+   
+    .container-developer{
+        padding: calc(9vh + 30px) 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;    
+    }
+
+    .developer{
+        width: 30%;
+    }
+
+    #demo{
+        align-items: flex-start;
+        padding-bottom: 0;
+        width: 65%;
+    }
+}
