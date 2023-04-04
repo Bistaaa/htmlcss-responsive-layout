@@ -113,6 +113,8 @@ header{
  MAIN 
 ***************************************/
 
+/* Developer */
+
 .container-developer{
     padding: calc(12vh + 30px) 20px 0;
     display: block;
@@ -123,16 +125,22 @@ header{
     background-color: rgba(181,221,255,255);
     width: 100%;
     border-radius: 20px;
-    padding: 60px 40px 0;
+    padding: 60px 40px 40px;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    text-align: center;
 }
 
 #demo{
-    justify-content: left;
+    align-items: flex-start;
+    padding-bottom: 0;
+}
+
+#demo  h2, #demo p{
+    text-align: left
 }
 
 .container-developer h2{
@@ -151,3 +159,7 @@ header{
 }
 
 
+.blue-icon{
+    color: rgba(0,132,253,255);
+    font-size: 70px;
+}
